@@ -35,12 +35,48 @@ void glutDisplayCB(void)
 
 	// draw triangle around origin
 	glColor3f(0.8f, 0.6f, 0.0f);
-	float base = 5.0f;
+	/*float base = 5.0f;
 	glBegin(GL_TRIANGLES);
 		glVertex3f(-base, -base, 0.0f); // v0
 		glVertex3f( base, -base, 0.0f); // v1
 		glVertex3f(    0,  base, 0.0f); // v2
-	glEnd();
+	glEnd();*/
+
+  glBegin(GL_TRIANGLES);
+    glVertex3f(-5.0f, 0.0f, 0); // v0
+    glVertex3f(5.0f, 0.0f, 0); // v1
+    glVertex3f(0, 10.0f, 0); // v2
+  glEnd();
+
+  glBegin(GL_TRIANGLES);
+  glVertex3f(5.0f, 0.0f, 0); // v0
+  glVertex3f(-5.0f, 0.0f, 0); // v1
+  glVertex3f(0, 10.0f, 0); // v2
+  glEnd();
+
+  glBegin(GL_TRIANGLES);
+    glVertex3f(-10.0f, -10.0f, 0); // v0
+    glVertex3f(0, -10.0f, 0); // v1
+    glVertex3f(-5.0f, 0.0f, 0); // v2
+  glEnd();
+
+  glBegin(GL_TRIANGLES);
+  glVertex3f(0, -10.0f, 0); // v0
+  glVertex3f(-10.0f, -10.0f, 0); // v1
+  glVertex3f(-5.0f, 0.0f, 0); // v2
+  glEnd();
+
+  glBegin(GL_TRIANGLES);
+    glVertex3f(0, -10.0f, 0); // v0
+    glVertex3f(10.0f, -10.0f, 0); // v1
+    glVertex3f(5.0f, 0.0f, 0); // v2
+  glEnd();
+
+  glBegin(GL_TRIANGLES);
+  glVertex3f(10.0, -10.0f, 0); // v0
+  glVertex3f(0, -10.0f, 0); // v1
+  glVertex3f(5.0f, 0.0f, 0); // v2
+  glEnd();
 	
 	glutSwapBuffers();
 }
